@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>RUTH ESTEFANIA ALVAREZ LARA</title>
+</head>
+<body>
+    <header>
+        <h1>RUTH ESTEFANIA ALVAREZ LARA</h1>
+        <p>Estudiante de Ingeniería</p>
+    </header>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Apasionada por las artes y la tecnología</p>
+        </section>
+       
+        <section id="experiencia">
+            <h2>Experiencia y Educación</h2>
+
+            <!-- Usamos una lista desordenada para items -->
+            <ul>
+                <!-- COMPLETAR: Item 1 -->
+                <li>
+                    <strong>Secundaria no.12 TALENTOS, Educación Secundaria</strong> - 2015-2018
+                    <br>
+                    En esta institución de tiempop completo aprendí a hablar francés 
+                    para principiantes, afiné mis habilidades de inglés y pude participar 
+                    en diversos festivales teatrales, presentándome, entre otros foros,
+                    en el Teatro Hidalgo
+
+                </li>
+
+                <!-- COMPLETAR: Item 2 -->
+                <li>
+                    <strong>CEDART Juan Rulfo, Preparatoria</strong> - 2018-2021
+                    <br>
+                   Cursé el bachillerato general y con especialidad en artes. Además de
+                   formarme en las materias regulares del curriculo, ahondé en mi educación actoral.
+
+                </li>
+
+                <!-- COMPLETAR: Item 3 (opcional) -->
+                <li>
+                    <strong>Universidad de Colima, Ingeniería de Software</strong> - 2021-actualidad
+                    <br>
+                    Actualmente estoy en el cuarto semestre. 
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: Habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+
+            <!-- COMPLETAR: Lista de habilidades -->
+            <ul>
+                <li>Inglés Anvanzado (C1)</li>
+                <li>Trabajo bajo presión</li>
+                <li>Trabajo en equipo</li>
+                <li>Multitasking</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: Contacto (Formulario) -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <!--
+                FORMULARIO HTML5 CON VALIDACIÓN NATIVA
+                Nota: Esto no envía emails aún (necesita backend),
+                pero valida que los datos sean correctos
+            -->
+            <form action="#" method="post">
+
+                <!-- Campo de Email con validación automática -->
+                <p>
+                    <label for="email">ralvarez13@ucol.mx</label><br>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="ejemplo@correo.com"
+                           required>
+                </p>
+
+                <!-- Campo de Nombre (requerido) -->
+                <p>
+                    <label for="nombre">Ruth Estefania Alvarez Lara</label><br>
+                    <input type="text"
+                           id="nombre"
+                           name="nombre"
+                           placeholder="¿Quién eres?"
+                           required
+                           minlength="2">
+                </p>
+
+                <!-- Campo de Mensaje -->
+                <p>
+                    <label for="mensaje"></label><br>
+                    <textarea id="mensaje"
+                              name="mensaje"
+                              rows="4"
+                              cols="50"
+                              placeholder="Escribe tu mensaje aquí..."
+                              required
+                              minlength="10"></textarea>
+                </p>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar Mensaje</button>
+
+            </form>
+
+            <!-- Información de contacto directo -->
+            <p>
+                <strong>Email directo:</strong> ralvarez13@ucol.mx<br>
+                <strong>Teléfono:3121744144</strong> 3121471013
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ====================
+         FOOTER: Pie de página
+         ==================== -->
+    <footer>
+        <p>&copy; 2026 Ruth Estefanìa Àlvarez Lara. CV creado con HTML5.</p>
+
+        <!-- OPCIONAL: Enlace a tu GitHub -->
+        <p>
+            <a href="https://github.com/Ruthweiler/Portfolio" target="_blank">
+                Ver mi GitHub
+            </a>
+        </p>
+    </footer>
+   
+
+
+
+
+</body>
+</html>
