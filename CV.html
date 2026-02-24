@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - ALVAREZ LARA RUTH ESTEFANIA</title>
+    
+    <!-- Vincula tu archivo CSS aquí -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts - Puedes cambiar la fuente si quieres -->
+    <link href="https://fonts.google.com/specimen/Saira?categoryFilters=Technology:%2FTechnology%2FVariable;600;700&display=swap">
+</head>
+<body>
+    <!-- Botoón Dark mode -->
+    <button id="themeToggle" aria-label="Cambiar tema">🌙</button>
+    <script>
+        const toggle = document.getElementById("themeToggle");
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+
+    <div class="cv-container">
+
+        <!-- ================================================================
+             SIDEBAR (Columna Izquierda)
+             ================================================================
+             Aquí va información personal, contacto y habilidades
+        -->
+        <aside class="sidebar">
+
+            <!-- FOTO DE PERFIL (opcional - puedes quitar si no tienes) -->
+            <div class="profile-photo">
+
+                <img src="FOTO.jpeg" alt="RUTH ESTEFANIA ALVAREZ LARA">
+
+                <div class="photo-placeholder">
+                    📷
+                </div>
+            </div>
+
+            <!-- NOMBRE Y TÍTULO -->
+            <div class="sidebar-header">
+                <h1>RUTH ESTEFANIA ALVAREZ LARA</h1>
+                <p class="job-title">Software Engineering Student</p>
+                <!-- Ejemplo: Estudiante de Ingeniería de Software -->
+            </div>
+
+            <!-- INFORMACIÓN DE CONTACTO -->
+            <section class="sidebar-section">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li>
+                        <strong>Email Address:</strong><br>
+                        ralvarez13@ucol.mx
+                    </li>
+                    <li>
+                        <strong>Telephone number:</strong><br>
+                        312-174-4144
+                    </li>
+                    <li>
+                        <strong>Location:</strong><br>
+                        Colima, Mexico
+                    </li>
+                    <li>
+                        <strong>GitHub:</strong><br>
+                        <a href="#">https://github.com/Ruthweiler</a>
+                    </li>
+                    <li>
+                        <strong>LinkedIn:</strong><br>
+                        <a href="#">[linkedin.com/in/tuusuario]</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- HABILIDADES TÉCNICAS -->
+            <section class="sidebar-section">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <!-- Personaliza con TUS habilidades reales -->
+                    <li>HTML5 y CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Multitasking</li>
+
+                    <!-- Agrega más si tienes -->
+                </ul>
+            </section>
+
+            <!-- IDIOMAS (opcional) -->
+            <section class="sidebar-section">
+                <h2>Languages</h2>
+                <ul class="languages-list">
+                    <li>
+                        <strong>Spanish:</strong> Native
+                    </li>
+                    <li>
+                        <strong>English:</strong> Advanced
+                    </li>
+                </ul>
+            </section>
+
+        </aside>
+
+        <!-- ================================================================
+             MAIN CONTENT (Columna Derecha)
+             ================================================================
+             Aquí va el contenido principal: sobre ti, experiencia, educación
+        -->
+        <main class="main-content">
+
+            <!-- SOBRE MÍ -->
+            <section class="content-section">
+                <h2>About me</h2>
+                <p>
+                    Passionate about arts and science, my educational backgrounds
+                    made me an excellent problem solving person that always looks forward
+                    to learn new skills and be up to date with the ones that already excels
+                    at. My artistic experience makes me have strong communications abilities
+                    as well as many other soft skills.
+                </p>
+
+            </section>
+
+            <!-- EXPERIENCIA Y EDUCACIÓN -->
+            <section class="content-section">
+                <h2>Experience and Education</h2>
+
+                <div class="experience-item">
+                    <h3>Universidad de Colima</h3>
+                    <p class="date-range">Since 2021</p>
+                    <p class="description">
+                        Software Engineering - 4th Semester
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Multi format file converter and exporter</h3>
+                    <p class="date-range">2025</p>
+                    <p class="description">
+                        Using SQL, Javascript and HTML; my team and I developed a tool kit program that converts files from XML, CSV or JASON to SQL.
+                        It was created with modular programming, making it easy to evolve and to be contributed to in the future, it can process many files
+                        at the same time, and its architecture is flow-oriented (loader → análisis → export → bundle), and receives input by a CLI
+                        menu, outputting migrated information directly to you data base.
+                    </p>
+                </div>
+
+
+            </section>
+
+
+
+
+            <!-- INTERESES (opcional - puedes quitar si no quieres) -->
+            <section class="content-section">
+                <h2>Interests</h2>
+                <p>
+                    Particulary inclined to arts and humanities, I like to participate in art festivals from my community
+                    and I always look forward to work in projects that can make a positive change in society.
+                </p>
+            </section>
+
+        </main>
+
+    </div>
+
+    <a href="https://github.com/Ruthweiler/Portfolio" target="_blank" aria-label="Ver proyecto en GitHub">See in Github</a>
+
+    <!-- FOOTER -->
+    <footer class="cv-footer">
+        <p>&copy; 2026 Ruth Estefania Alvarez Lara. CV created with HTML5 and CSS3 Flexbox.</p>
+        <p>Last update: February 2026</p>
+    </footer>
+
+    <!--
+    ========================================================================
+    INSTRUCCIONES FINALES:
+    ========================================================================
+
+    1. Reemplaza TODOS los textos entre [corchetes] con tu información real
+    2. Puedes agregar o quitar secciones según necesites
+    3. Si no tienes foto, deja el placeholder o quita la sección completa
+    4. Asegúrate de que style.css esté en la misma carpeta
+    5. Abre este archivo en el navegador para ver el resultado
+    6. Usa DevTools (F12) para inspeccionar y experimentar
+
+    ¡Éxito!
+    ========================================================================
+
+    -->
+</body>
+</html>

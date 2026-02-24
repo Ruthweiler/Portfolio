@@ -1,0 +1,392 @@
+/* 
+
+STYLE.CSS - NIVEL AVANZADO
+
+*/
+
+/*RESET Y BASE*/
+* {
+    /* Reset básico */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    box-sizing: border-box; /* incluye el padding y el border en el ancho total */
+}
+/* Animación extra */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+:root {
+    --bg-primary: #0f172a; /* Fondo principal */
+    --bg-secondary: #111827; /* Contenedor */
+    --card-bg: #1e293b; /* Fondo cards */
+    --accent: #3b82f6; /* Azul eléctrico */
+    --text-primary: #e2e8f0; /* Texto claro */
+    --text-muted: #94a3b8; /* Texto secundario */
+    --radius-lg: 16px; /* Border radius grande */
+    --transition: all 0.3s ease; /* Transición global */
+}
+a:focus,
+button:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+/* Botón modo oscuro */
+.dark-mode {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f4f4f4;
+    --card-bg: #ffffff;
+    --text-primary: #111827;
+}
+
+html {
+    scroll-behavior: smooth; /* Scroll suave */
+}
+
+body {
+    /* Configuración general de la página */
+    font-family: 'Sans Serif Collection', 'Saira', sans-serif; /* Tipografía */
+    background: #0f172a; /* Azul oscuro profundo */
+    color: #e2e8f0; /* Gris claro  */
+    line-height: 1.7; /* Interlineado*/
+    padding: 30px; /* Espacio exterior */
+    text-align: justify;
+
+    /*Implementación de variables para mejorar escalabilidad y manejo*/
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/*CONTAINER PRINCIPAL CON FLEXBOX*/
+
+.cv-container {
+    /* IMPORTANTE: Aquí activas Flexbox para el layout de 2 columnas */
+    display: flex; /* Activa Flexbox */
+    max-width: 1300px; /* anchura estilo dashboard */
+    margin: 0 auto; /* Centrado */
+    background: #A17EAE; /* Fondo oscuro */
+    border-radius: 16px; /* Bordes suaves  */
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6); /* Sombra profunda */
+    overflow: hidden; /* Evita desbordes */
+    animation: fadeSlideUp 0.8s ease-out; /* animación */
+}
+
+/* SIDEBAR (Columna izquierda) */
+.sidebar {
+    /* Ancho fijo, no crece ni encoge */
+    flex: 0 0 320px; /* Ancho fijo*/
+    background: linear-gradient(180deg, #0f172a, #1e293b); /* Gradiente vertical */
+    padding: 50px 35px; /* Espaciado generoso */
+    border-right: 1px solid rgba(255,255,255,0.05); /* Línea sutil divisoria */
+
+}
+
+/* --- Foto de perfil --- */
+.profile-photo {
+    text-align: center; /* Centrado */
+    margin-bottom: 40px;
+}
+
+    .profile-photo img {
+        width: 160px; /*Ancho*/
+        height: 160px; /*Alto*/
+        border-radius: 50%; /* Circular */
+        object-fit: cover; /* Cubre todo el espacio sin deformarse */
+        border: 3px solid #3b82f6; /* Azul eléctrico */
+        box-shadow: 0 0 25px rgba(59,130,246,0.5); /* Glow*/
+        transition: all 0.3s ease; /* Transición*/
+    }
+
+        .profile-photo img:hover {
+            transform: scale(1.05); /* Zoom suave */
+            box-shadow: 0 0 40px rgba(59,130,246,0.8); /* Glow más fuerte */
+        }
+
+
+/* --- Header del sidebar --- */
+.sidebar-header {
+    text-align: center; /* Alineado al centro*/
+    margin-bottom: 40px; /* Espacio hacia abajo*/
+}
+
+    .sidebar-header h1 {
+        font-size: 1.9em; /* Tamaño de la letra*/
+        font-weight: 700; /* Nivel de intensidad de la letra*/
+        letter-spacing: 1px; /* Espaciado */
+    }
+
+.job-title {
+    color: #3b82f6; /* Azul eléctrico */
+    font-weight: 600; /* Nivel de intensidad de la letra*/
+    margin-top: 8px; /* Espacio superior*/
+}
+
+/* --- Secciones del sidebar --- */
+.sidebar-section {
+    margin-bottom: 35px; /* Espacio inferior*/
+}
+
+    .sidebar-section h2 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        text-transform: uppercase; /* Estilo tech */
+        letter-spacing: 1px;
+        color: #3b82f6;
+    }
+
+/* --- Listas --- */
+.contact-list {
+    list-style: none;
+}
+
+    .contact-list li {
+        margin-bottom: 14px;
+        font-size: 0.95em;
+    }
+
+    .contact-list a {
+        color: #cbd5e1;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+        .contact-list a:hover {
+            color: #3b82f6; /* Azul tech */
+            transform: translateX(5px); /* Movimiento lateral */
+        }
+
+/* Skills */
+.skills-list {
+    list-style: none;
+}
+
+    .skills-list li {
+        background: rgba(59,130,246,0.1); /* Fondo azul translúcido */
+        border: 1px solid rgba(59,130,246,0.3);
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+        .skills-list li:hover {
+            background: rgba(59,130,246,0.2);
+            transform: translateX(4px);
+        }
+
+/* =============================================================================
+   MAIN CONTENT
+   ============================================================================= */
+
+.main-content {
+    flex: 1; /* Ocupa espacio restante */
+    padding: 60px; /* Espaciado amplio */
+}
+
+/* Secciones */
+.content-section {
+    margin-bottom: 60px;
+}
+
+.content-section p {
+    margin-bottom: 35px;
+    padding: 25px;
+    background: #1e293b; /* Fondo tipo card */
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+}
+
+    .content-section h2 {
+        font-size: 2.2em;
+        margin-bottom: 25px;
+        color: white;
+        position: relative;
+    }
+
+        /* Línea debajo del título */
+        .content-section h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 60px;
+            height: 3px;
+            background: #3b82f6; /* Línea azul */
+            box-shadow: 0 0 10px #3b82f6; /* Glow sutil */
+        }
+
+/* Experiencia */
+.experience-item {
+    margin-bottom: 35px;
+    padding: 25px;
+    background: #1e293b; /* Fondo tipo card */
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+}
+
+    .experience-item:hover {
+        transform: translateY(-5px); /* Eleva */
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .experience-item h3 {
+        margin-bottom: 8px;
+        color: #f1f5f9;
+    }
+
+.date-range {
+    color: #3b82f6;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+
+
+ 
+
+
+/* =============================================================================
+   FOOTER
+   ============================================================================= */
+
+.cv-footer {
+    background: #0f172a;
+    padding: 25px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #94a3b8; /* Gris azulado */
+}
+
+/* =============================================================================
+   RESPONSIVE
+   ============================================================================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .cv-container {
+        flex-direction: column; /* Cambia a vertical */
+    }
+
+    .sidebar {
+        flex: 1;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .main-content {
+        padding: 40px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+
+    .profile-photo img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .content-section h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .experience-item,
+    .project-item {
+        padding: 18px;
+    }
+}
+
+/* =============================================================================
+   ELEMENTOS ADICIONALES/CREATIVOS (Opcional - para destacar)
+   ============================================================================= */
+
+/* Tus estilos personalizados aquí */
+
+
+/* 
+==============================================================================
+GUÍA PARA NIVEL AVANZADO
+==============================================================================
+
+PROPIEDADES FLEXBOX CLAVE:
+- display: flex
+- flex-direction (row | column)
+- flex: [grow] [shrink] [basis]
+- justify-content
+- align-items
+- gap
+
+RESPONSIVE:
+- Usa @media queries
+- Cambia flex-direction a column en móviles
+- Ajusta tamaños de fuente
+- Reduce padding/margin en pantallas pequeñas
+
+EFECTOS RECOMENDADOS:
+- transition en hover effects
+- transform para movimiento sutil
+- box-shadow para profundidad
+- border-radius para suavidad
+- gradients para fondo interesante
+
+PALETA DE COLORES:
+Elige 2-3 colores principales:
+- Color primario (ej: #2c3e50 - oscuro)
+- Color secundario (ej: #3498db - azul)
+- Color de acento (ej: #e74c3c - rojo/naranja)
+- Fondo claro (#f5f5f5)
+- Blanco (#ffffff)
+
+TIPOGRAFÍA:
+- Google Fonts recomendadas: Inter, Roboto, Poppins, Montserrat
+- Jerarquía clara: h1 > h2 > h3 > p
+- Line-height: 1.6 - 1.8 para legibilidad
+
+ESPACIADO:
+- Padding generoso: 30px - 50px en contenedores
+- Margin entre secciones: 30px - 40px
+- Margin entre elementos: 15px - 20px
+
+CRITERIOS DE EVALUACIÓN:
+1. Flexbox correctamente implementado (30 pts)
+2. Responsive perfecto en 3 tamaños (25 pts)
+3. Diseño profesional y creativo (20 pts)
+4. Código limpio y bien estructurado (15 pts)
+5. Efectos y transiciones (10 pts)
+
+BONUS (+5 pts cada uno):
+- Animaciones CSS
+- Dark mode
+- Efectos creativos únicos
+- Uso avanzado de pseudo-elementos
+- Accesibilidad (ARIA, contrast ratio)
+
+¡Demuestra todo lo que sabes!
+==============================================================================
+*/
