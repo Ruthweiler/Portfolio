@@ -1,1 +1,44 @@
- extras.txt (si agregaste funcionalidades adicionales)
+ FUNCIONALIDADES EXTRAS IMPLEMENTADAS EN STYLE.CSS
+
+1. Animaciones CSS
+   - Animación "fadeSlideUp" aplicada al contenedor principal.
+   - Efecto de entrada suave con opacidad y desplazamiento vertical.
+   - Mejora la experiencia visual al cargar la página.
+
+2. Modo Oscuro (Dark Mode)
+   - Implementación mediante la clase .dark-mode.
+   - Variables CSS dinámicas para cambiar colores de fondo y texto.
+   - Permite alternar entre modo claro y oscuro sin duplicar código.
+
+3. Hover Effects Avanzados
+   - Zoom suave en la foto de perfil con glow eléctrico.
+   - Movimiento lateral en enlaces de contacto.
+   - Elevación de tarjetas de experiencia con sombra profunda.
+   - Transiciones globales para suavizar cambios.
+
+4. Uso de Pseudo-elementos
+   - Línea decorativa debajo de títulos (h2) en secciones de contenido.
+   - Glow azul eléctrico para destacar encabezados.
+
+5. Flexbox Avanzado
+   - Layout de dos columnas con sidebar fijo y contenido flexible.
+   - Adaptación automática en pantallas pequeñas (columnas → filas).
+   - Control de proporciones con propiedades flex.
+
+6. Responsive Design
+   - Media queries para tres niveles:
+     • Tablets (≤1024px): layout vertical.
+     • Móviles (≤768px): reducción de padding y tamaños de imagen.
+     • Móviles pequeños (≤480px): optimización de cards.
+   - Garantiza legibilidad y estética en cualquier dispositivo.
+
+7. Estética Creativa
+   - Gradientes en el sidebar para dar profundidad.
+   - Cards con bordes redondeados y sombras sutiles.
+   - Paleta de colores consistente (azul eléctrico + fondo oscuro).
+   - Tipografía moderna (Inter, Segoe UI).
+
+8. Accesibilidad
+   - Outline visible en enlaces y botones al recibir foco.
+   - Contraste adecuado entre texto y fondo.
+   - Scroll suave para mejorar navegación.
