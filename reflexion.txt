@@ -1,1 +1,11 @@
 REFLEXIÓN
+Mi proceso creativo comenzó definiendo una identidad clara: quería un estilo tech profesional, inspirado en interfaces SaaS modernas, por eso elegí una paleta oscura con azul eléctrico y morado como acento principal para transmitir innovación y enfoque tecnológico.
+Antes de escribir código, pensé en la jerarquía visual: contraste alto, espacios amplios y “cards” bien delimitadas para que la información fuera fácil de escanear en segundos, como lo haría un reclutador.
+Elegí el layout de 2 columnas con Flexbox porque separa perfectamente identidad (sidebar) y contenido profesional (main), creando equilibrio visual y permitiendo una estructura limpia y modular.
+Flexbox fue clave porque facilita el control del crecimiento y alineación de columnas, además de permitir un cambio sencillo de dirección en pantallas pequeñas.
+Implementé el responsive usando @media queries en tres puntos críticos (1024px, 768px y 480px), cambiando flex-direction: row a column y ajustando paddings, tamaños de fuente y proporciones.
+También optimicé la experiencia móvil reduciendo espacios, escalando imágenes y compactando tarjetas sin perder legibilidad ni estética profesional.
+Apliqué técnicas avanzadas como gradientes sutiles, sombras profundas, efectos glow con box-shadow, pseudo-elementos decorativos en títulos y transiciones suaves con transform.
+Incorporé microinteracciones (hover con elevación y desplazamiento) para dar sensación de interfaz dinámica sin sobrecargar la experiencia visual.
+Cuidé especialmente la coherencia visual usando una paleta limitada y consistente, junto con una tipografía moderna (Inter) para reforzar la identidad tecnológica.
+En el proceso aprendí que un buen diseño no depende de efectos complejos, sino de equilibrio, contraste, jerarquía y consistencia; la técnica potencia la creatividad cuando está al servicio de la claridad.
