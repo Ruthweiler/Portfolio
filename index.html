@@ -1,338 +1,188 @@
+
 <!DOCTYPE html>
+<html lang="es">
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>RUTH ESTEFANIA ALVAREZ LARA</title>
-    <style>
-        #sobre-mi {
-            max-width: 512px;
-            margin: 20px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: relative;
-            top: 0px;
-            left: 250px;
-            text-align: justify;
-        }
-        #experiencia {
-            max-width: 1000px;
-            margin: 20px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: relative;
-            top: 10px;
-            left: 10px;
-            text-align: justify;
-        }
-        #habilidades {
-            max-width: 1000px;
-            margin: 20px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: relative;
-            top: 10px;
-            left: 10px;
-            text-align: justify;
-        }
-        #contacto {
-            max-width: 1000px;
-            margin: 20px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: relative;
-            top: 10px;
-            left: 10px;
-            text-align: justify;
-        }
-            /*Da formato a mi foto, la hace ovalada y ajusta el tamaño*/
-        img {
-            width: 324px;
-            height: 324px;
-            max-width: 100%;
-            border-radius: 50%;
-            border: 2px solid #000;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            position: relative;
-            top: 120px;
-            left: 80px;
-        }
-            /* Le aplica un color suave en lugar de blanco puro al fondo, 
-            le agrega la fuente, el color y el interlineado. los cambios
-            se aplican a todo lo que está dentro del tag body
-            */
-        body {
-            background-color: #f4f4f4;
-            font-family: Consolas, monospace;
-            color: #333;
-            line-height: 1.6;
-
-            body {
-                font-family: Consolas, monospace;
-                color: #333;
-                line-height: 1.6;
-            }
-            /* En el tag header h1, se le aplica un color y un tamaño de letra, asimismo se 
-                alínea al centro de la página y se agrega un margen
-            */
-            header h1 {
-                color: #440E03;
-                font-size: 2.5em;
-                text-align: center;
-                margin-bottom: 5px;
-            }
-            /* En el header p se alinea al centro, se cambia el color, se modifica el tamaño de
-                la letra y el tamaño de margen
-            */
-            header p {
-                text-align: center;
-                color: #440E03;
-                font-size: 1.2em;
-                margin-bottom: 30px;
-            }
-            /* Cada sección (Sobre mí, Experiencia, etc.) necesita espacio para respirar.
-                El margin-bottom crea separación visual entre secciones.
-            */
-            section {
-                margin-bottom: 30px;
-            }
-            /*Los h2 marcan cada sección del CV. Un color azul y un borde inferior los hace
-                destacar sin ser invasivos. El padding-bottom crea espacio antes del borde.
-            */
-            h2 {
-                color: #440E03;
-                font-size: 1.8em;
-                border-bottom: 2px solid #440E03;
-                padding-bottom: 10px;
-                margin-bottom: 15px;
-            }
-            /*Los párrafos necesitan un espaciado de línea cómodo para leer. El margin-bottom
-                separa párrafos consecutivos.
-            */
-            p {
-                line-height: 1.8;
-                margin-bottom: 15px;
-            }
-            /*Quitamos los bullets predeterminados (list-style: none) y damos espacio a cada 
-                elemento. El borde azul izquierdo marca cada item visualmente.
-            */
-            ul {
-                list-style: none;
-                padding-left: 0;
-            }
-            /*Los inputs y textarea necesitan estilos consistentes. El padding interno hace que
-                sean más fáciles de usar. El border-radius suaviza las esquinas.
-            */
-            li {
-                margin-bottom: 15px;
-                padding-left: 20px;
-                border-left: 3px solid #440E03;
-            }
-            /*El footer cierra el CV. Un fondo oscuro con texto claro crea contraste. El text-align:
-                center alinea todo el contenido.
-            */
-            input, textarea {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 15px;
-                border: 1px solid #ddd;
-                border-radius: 5px;
-                font-family: Arial, sans-serif;
-            }
-
-            button {
-                background: #3498db;
-                color: white;
-                padding: 12px 30px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                font-size: 1em;
-                font-weight: 600;
-            }
-            /*Los efectos hover mejoran la interactividad. Cuando pasas 
-                el mouse sobre el botón o enlaces,
-            cambian de color. Esto indica que son clicables. footer */
-
-            footer {
-                background: #2c3e50;
-                color: white;
-                text-align: center;
-                padding: 20px;
-                margin-top: 30px;
-                border-radius: 0 0 10px 10px;
-            }
-
-                footer a {
-                    color: #3498db;
-                    text-decoration: none;
-                }
-
-            button:hover {
-                background: #2980b9;
-                transform: translateY(-2px);
-                box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-            }
-
-            footer a:hover {
-                color: #5dade2;
-                text-decoration: underline;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - ALVAREZ LARA RUTH ESTEFANIA</title>
+    
+    <!-- Vincula tu archivo CSS aquí -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts - Puedes cambiar la fuente si quieres -->
+    <link href="https://fonts.google.com/specimen/Saira?categoryFilters=Technology:%2FTechnology%2FVariable;600;700&display=swap">
 </head>
 <body>
-    <header>
-        <h1>RUTH ESTEFANIA ALVAREZ LARA</h1>
-        <p>Software Engineering student</p>
-        <img src="foto.jpeg"/>
-    </header>
-    <main>
-        <section id="sobre-mi">
-            <h2>About me</h2>
-            <p>Passionate about arts and science, my educational backgrounds
-            made me an excellent problem solving person that always looks forward
-            to learn new skills and be up to date with the ones that already excels 
-            at. My artistic experience makes me have strong communications abilities 
-            as well as many other soft skills.</p>
-        </section>
+    
 
-        <section id="experiencia">
-            <h2>Experience and Education</h2>
+    <div class="cv-container">
 
-            <!-- Usamos una lista desordenada para items -->
-            <ul>
-                <!-- COMPLETAR: Item 1 -->
-                <li>
-                    <strong>Talentos Juniorhigh, JuniorHigh Education</strong> - 2015-2018
-                    <br>
-                    In this full time institution, I learned to speak basic French, sharped my English,
-                    and was able to participate in many acting festivals, focusing on stage performance and 
-                    voice acentuation, I gave shows in many teathers, being one of them the well known Teatro 
-                    Hidalgo in Colima city. The school high demand also helped me to be really good at working on teams
-                    and to multitask.
-                    
-                </li>
+        <!--
+             SIDEBAR (Columna Izquierda)
+             Aquí va información personal, contacto y habilidades
+        -->
+        <aside class="sidebar">
 
-                <!-- COMPLETAR: Item 2 -->
-                <li>
-                    <strong>CEDART Juan Rulfo, Highschool </strong> - 2018-2021
-                    <br>
-                    I graduate on the regular curriculum subjects, however, I also had an arts formation, 
-                    where I sharped my acting education.
+            <!-- Botoón Dark mode -->
+            <button id="themeToggle" aria-label="Cambiar tema">🌙</button>
+            <script>
+                const toggle = document.getElementById("themeToggle");
+                toggle.addEventListener("click", () => {
+                    document.body.classList.toggle("dark-mode");
+                });
+            </script>
 
-                </li>
+            <!-- FOTO DE PERFIL (opcional - puedes quitar si no tienes) -->
+            <div class="profile-photo">
 
-                <!-- COMPLETAR: Item 3 (opcional) -->
-                <li>
-                    <strong>Universidad de Colima, Software Engineering</strong> - 2021-now
-                    <br>
-                    Right now, I am in 4th semester. By now, I have learned programming languagues such as JavaScript, 
-                    HTML and CSS; at the same time,  I have been working with data structures, embebded systems and image 
-                    processing. Although I am assisting to collegue, I never stop doing research and learning by my own, 
-                    I am very keen to explore and study topics related to my carrer so I keep knowledge at an important level
-                    in life.
-                </li>
-            </ul>
-        </section>
+                <img src="FOTO.jpeg" alt="RUTH ESTEFANIA ALVAREZ LARA">
 
-        <!-- SECCIÓN: Habilidades -->
-        <section id="habilidades">
-            <h2>Skills</h2>
+                <div class="photo-placeholder">
+                    📷
+                </div>
+            </div>
 
-            <!-- COMPLETAR: Lista de habilidades -->
-            <ul>
-                <li>Advaced English (C1)</li>
-                <li>Work under pressure</li>
-                <li>Team work</li>
-                <li>Multitasking</li>
-            </ul>
-        </section>
+            <!-- NOMBRE Y TÍTULO -->
+            <div class="sidebar-header">
+                <h1>RUTH ESTEFANIA ALVAREZ LARA</h1>
+                <p class="job-title">Software Engineering Student</p>
+                <!-- Ejemplo: Estudiante de Ingeniería de Software -->
+            </div>
 
-        <!-- SECCIÓN: Contacto (Formulario) -->
-        <section id="contacto">
-            <h2>Contact</h2>
+            <!-- INFORMACIÓN DE CONTACTO -->
+            <section class="sidebar-section">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li>
+                        <strong>Email Address:</strong><br>
+                        ralvarez13@ucol.mx
+                    </li>
+                    <li>
+                        <strong>Telephone number:</strong><br>
+                        312-174-4144
+                    </li>
+                    <li>
+                        <strong>Location:</strong><br>
+                        Colima, Mexico
+                    </li>
+                    <li>
+                        <strong>GitHub:</strong><br>
+                        <a href="#">https://github.com/Ruthweiler</a>
+                    </li>
+                    <li>
+                        <strong>LinkedIn:</strong><br>
+                        <a href="#">[linkedin.com/in/tuusuario]</a>
+                    </li>
+                </ul>
+            </section>
 
-            <!--
-                FORMULARIO HTML5 CON VALIDACIÓN NATIVA
-                Nota: Esto no envía emails aún (necesita backend),
-                pero valida que los datos sean correctos
-            -->
-            <form action="#" method="post">
+            <!-- HABILIDADES TÉCNICAS -->
+            <section class="sidebar-section">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <!-- Personaliza con TUS habilidades reales -->
+                    <li>HTML5 y CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Multitasking</li>
 
-                <!-- Campo de Email con validación automática -->
+                    <!-- Agrega más si tienes -->
+                </ul>
+            </section>
+
+            <!-- IDIOMAS (opcional) -->
+            <section class="sidebar-section">
+                <h2>Languages</h2>
+                <ul class="languages-list">
+                    <li>
+                        <strong>Spanish:</strong> Native
+                    </li>
+                    <li>
+                        <strong>English:</strong> Advanced
+                    </li>
+                </ul>
+            </section>
+
+        </aside>
+
+        <!-- 
+             MAIN CONTENT (Columna Derecha)
+             Aquí va el contenido principal: sobre ti, experiencia, educación
+        -->
+        <main class="main-content">
+
+
+
+            <!-- SOBRE MÍ -->
+            <section class="content-section">
+                <h2>About me</h2>
                 <p>
-                    <label for="email">Mail Address</label><br>
-                    <input type="email"
-                           id="email"
-                           name="email"
-                           placeholder="example@mail.com"
-                           required>
+                    Passionate about arts and science, my educational backgrounds
+                    made me an excellent problem solving person that always looks forward
+                    to learn new skills and be up to date with the ones that already excels
+                    at. My artistic experience makes me have strong communications abilities
+                    as well as many other soft skills.
                 </p>
 
-                <!-- Campo de Nombre (requerido) -->
+            </section>
+
+            <!-- EXPERIENCIA Y EDUCACIÓN -->
+            <section class="content-section">
+                <h2>Experience and Education</h2>
+
+                <div class="experience-item">
+                    <h3>Universidad de Colima</h3>
+                    <p class="date-range">Since 2021</p>
+                    <p class="description">
+                        Software Engineering - 4th Semester.
+                        By now, I have learned programming languagues such as JavaScript,
+                        HTML and CSS; at the same time,  I have been working with data structures, embebded systems and image
+                        processing. Although I am assisting to collegue, I never stop doing research and learning by my own,
+                        I am very keen to explore and study topics related to my carrer so I always keep knowledge at an important level
+                        in life.
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Multi format file converter and exporter</h3>
+                    <p class="date-range">2025</p>
+                    <p class="description">
+                        Using SQL, Javascript and HTML; my team and I developed a tool kit program that converts files from XML, CSV or JASON to SQL.
+                        It was created with modular programming, making it easy to evolve and to be contributed to in the future, it can process many files
+                        at the same time, and its architecture is flow-oriented (loader → análisis → export → bundle), and receives input by a CLI
+                        menu, outputting migrated information directly to you data base.
+                    </p>
+                </div>
+
+
+            </section>
+
+
+
+
+            <!-- INTERESES (opcional - puedes quitar si no quieres) -->
+            <section class="content-section">
+                <h2>Interests</h2>
                 <p>
-                    <label for="nombre">Your name</label><br>
-                    <input type="text"
-                           id="nombre"
-                           name="name"
-                           placeholder="Who are you?"
-                           required
-                           minlength="2">
+                    Particulary inclined to arts and humanities, I like to participate in art festivals from my community
+                    and I always look forward to work in projects that can make a positive change in society.
                 </p>
+            </section>
 
-                <!-- Campo de Mensaje -->
-                <p>
-                    <label for="Your comment"></label><br>
-                    <textarea id="mensaje"
-                              name="message"
-                              rows="4"
-                              cols="50"
-                              placeholder="Write your message her"
-                              required
-                              minlength="10"></textarea>
-                </p>
+            <a href="https://github.com/Ruthweiler/Portfolio" target="_blank" aria-label="Ver proyecto en GitHub">See in Github</a>
 
-                <!-- Botón de envío -->
-                <button type="submit">Send message</button>
+        </main>
 
-            </form>
+    </div>
 
-            <!-- Información de contacto directo -->
-            <p>
-                <strong>Direct mail:</strong> ralvarez13@ucol.mx<br>
-                <strong>Telephone number:3121744144</strong> 3121471013
-            </p>
-        </section>
+    
 
-    </main>
-
-    <!-- ====================
-         FOOTER: Pie de página
-         ==================== -->
-    <footer>
-        <p>&copy; 2026 Ruth Estefania Alvarez Lara. Resume created with HTML5.</p>
-
-        <!-- OPCIONAL: Enlace a tu GitHub -->
-        <p>
-            <a href="https://ruthweiler.github.io/Portfolio/" target="_blank">
-                See my GitHub
-            </a>
-        </p>
+    <!-- FOOTER -->
+    <footer class="cv-footer">
+        <p>&copy; 2026 Ruth Estefania Alvarez Lara. CV created with HTML5 and CSS3 Flexbox.</p>
+        <p>Last update: February 2026</p>
     </footer>
 
 
-
-
-
 </body>
-
 </html>
